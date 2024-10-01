@@ -11,6 +11,7 @@ import SigninPage from "./pages/auth/sign-in/sign-in.page";
 import SignupPage from "./pages/auth/sign-up/sign-up.page";
 import PaymentPage from "./pages/payment/payment.page";
 import { Toaster } from "sonner";
+import ShopPage from "./pages/shop/shop.page";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/shop",
+        element: <ShopPage />,
       },
       {
         path: "/cart",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import Tab from "./Tab";
+import Tab from "../../../components/Tab";
 import {
   getAllProducts,
   getProductsByCategory,
@@ -13,7 +13,7 @@ export default function Products() {
   const [error, setError] = useState("");
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -32,7 +32,6 @@ export default function Products() {
   }, []);
 
   useEffect(() => {
-
     const fetchProducts = async () => {
       setIsLoading(true);
       try {
@@ -43,19 +42,13 @@ export default function Products() {
         setIsError(true);
         setError(e.message);
         console.log(e);
-      } finally{
+      } finally {
         setIsLoading(false);
       }
-    }
+    };
 
     fetchProducts();
-    
   }, [selectedCategory]);
-
-  // const filteredProducts =
-  //   selectedCategory === "ALL"
-  //     ? products
-  //     : products.filter((el) => el.categoryId === selectedCategory);
 
   const handleTabClick = (id) => {
     setSelectedCategory(id);

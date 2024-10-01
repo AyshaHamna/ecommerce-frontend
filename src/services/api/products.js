@@ -7,8 +7,8 @@ export const getAllProducts = async () => {
     return products;
 }
 
-export const getProductsByCategory = async (categoryId) => {
-    const res = await fetch(`http://localhost:8000/api/products?categoryId=${categoryId}`, {
+export const getProductsByCategory = async (categoryId = "ALL", sortOrder = "") => {
+    const res = await fetch(`http://localhost:8000/api/products?categoryId=${categoryId}&sortOrder=${sortOrder}`, {
         method: "GET"
     });
 
