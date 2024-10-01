@@ -12,6 +12,7 @@ import SignupPage from "./pages/auth/sign-up/sign-up.page";
 import PaymentPage from "./pages/payment/payment.page";
 import { Toaster } from "sonner";
 import ShopPage from "./pages/shop/shop.page";
+import ProductPage from "./pages/product/product.page";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <ShopPage />,
+      },
+      {
+        path: "/shop/product/:productId",
+        element: <ProductPage />,
       },
       {
         path: "/cart",

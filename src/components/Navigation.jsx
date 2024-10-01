@@ -9,7 +9,7 @@ export default function Navigation() {
   const {user} = useUser();
   const { cart } = useContext(CartContext);
   return (
-    <nav className="flex items-center justify-between py-8 px-16">
+    <nav className="flex items-center justify-between py-5 px-16">
       <div className="flex items-center gap-x-16">
         <Link to="/" className="font-semibold text-3xl">
           Melbius
