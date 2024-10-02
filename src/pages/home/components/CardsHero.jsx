@@ -22,13 +22,13 @@ function CardsHero() {
           <div className="flex-grow bg-gray-200 rounded-lg h-full">
             <img
               src="/assets/hero/apple-watch.png"
-              className=" md:p-5 h-full w-full object-contain"
+              className="p-2 md:p-5 h-full w-full object-contain"
             />
           </div>
           <div className="flex-grow bg-gray-200 rounded-lg h-full">
             <img
               src="/assets/hero/airpods-max.png"
-              className=" h-full w-full object-contain md:p-5"
+              className="p-2 h-full w-full object-contain md:p-5"
             />
           </div>
         </div>
