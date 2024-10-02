@@ -5,7 +5,7 @@ export default function Services() {
     <section className="">
       <h1 className="text-4xl font-semibold">Services To Help You Shop</h1>
       <div className="border mt-4"></div>
-      <div className="py-8 grid grid-cols-3 gap-x-8">
+      <div className="py-8 grid grid-cols-1 gap-y-3 sm:grid-cols-3 gap-x-8">
         <ServiceCard
           title="Frequenly Asked Questions"
           subtitle="Updates on safe shopping in our stores"

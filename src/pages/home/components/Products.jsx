@@ -65,7 +65,7 @@ export default function Products() {
         <div>Loading...</div>
       ) : (
         <div className="py-8">
-          <div className="flex gap-x-4 items-center">
+          <div className="flex gap-x-4 items-center overflow-auto px-2">
             {categories.concat([{ _id: "ALL", name: "ALL" }]).map((el) => {
               return (
                 <Tab
@@ -77,7 +77,7 @@ export default function Products() {
               );
             })}
           </div>
-          <div className="grid grid-cols-4 gap-4 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {products.map((el) => {
               return (
                 <ProductCard

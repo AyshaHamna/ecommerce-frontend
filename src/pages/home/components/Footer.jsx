@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section className="bg-[#f4f9ff] py-16 px-32 grid grid-cols-3 gap-x-16 w-full">
+    <section className="bg-[#f4f9ff] py-4 sm:py-16 px-8 lg:px-32 grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-3 w-full">
       <div className="col-span-1">
         <a href="/" className="text-3xl font-semibold">
           DigiX
@@ -30,8 +30,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="col-span-2 grid grid-cols-2 gap-x-16">
-        <div className="grid grid-cols-2 gap-x-16">
+      <div className="col-span-2 grid grid-cols-1 gap-y-3 md:grid-cols-2 gap-x-16">
+        <div className="grid grid-cols-1 gap-y-2 sm:grid-cols-2 gap-x-16">
           <div>
             <h1 className="text-2xl font-semibold">Make Money</h1>
             <ul className="mt-2">
@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-x-16">
+        <div className="grid grid-cols-1 gap-y-2 sm:grid-cols-2 gap-x-16">
           <div>
             <h1 className="text-2xl font-semibold">Support</h1>
             <ul className="mt-2">
