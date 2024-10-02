@@ -31,7 +31,7 @@ function RootLayout() {
     >
       <main>
         <Navigation />
-        <div className=" py-3 px-5 lg:py-8 lg:px-16 ">
+        <div className=" py-3 px-5 lg:py-4 lg:px-16 ">
           <Outlet />
         </div>
         <Footer />
