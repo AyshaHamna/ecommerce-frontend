@@ -25,7 +25,7 @@ export default function ProductCard(props) {
   };
 
   return (
-    <div className="h-[432px] relative lg:my-3">
+    <div className="h-[432px] relative md:my-3">
       <Link to={`/shop/product/${props._id}`}>
         {isLiked ? (
           <Heart

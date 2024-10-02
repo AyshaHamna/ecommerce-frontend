@@ -40,7 +40,7 @@ function ProductPage() {
   }, []);
 
   return (
-    <section className="py-5 px-16 ">
+    <section className="py-5 px-8 lg:px-16 ">
       {isError ? (
         <p className="text-red-500">Error: {error}</p>
       ) : isLoading ? (

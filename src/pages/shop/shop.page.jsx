@@ -59,13 +59,13 @@ function ShopPage() {
   }
 
   return (
-    <section className="py-5 px-16">
+    <section className="py-5 px-8 xl:px-16">
       {isError ? (
         <p className="text-red-500">Error: {error}</p>
       ) : isLoading ? (
         <div>Loading...</div>
       ) : (
-        <div className="flex gap-x-4 items-center justify-center">
+        <div className="flex gap-x-4 items-center justify-center overflow-auto p-2">
           {categories.concat([{ _id: "ALL", name: "ALL" }]).map((el) => {
             return (
               <Tab
@@ -88,7 +88,7 @@ function ShopPage() {
       </div>
       <div className="grid grid-cols-5 py-5 gap-x-3">
         <div className="col-span-1 border p-2 rounded-lg">filter</div>
-        <div className="col-span-4 grid grid-cols-4 gap-4 mt-4">
+        <div className="col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
           {products.map((el) => {
             return (
               <ProductCard
