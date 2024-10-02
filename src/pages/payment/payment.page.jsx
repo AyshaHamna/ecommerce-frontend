@@ -46,7 +46,7 @@ function PaymentPage() {
                 type="button"
                 onClick={() => {
                   toast.success("Cash on delivery order confirmed");
-                  navigate("/profile/orders"); //getOrdersByUser *challenge
+                  navigate("/profile/orders");
                 }}
                 className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
               >
@@ -56,6 +56,8 @@ function PaymentPage() {
                 type="button"
                 onClick={() => {
                   //payhere
+                  toast.success("Credit Card order confirmed");
+                  navigate("/profile/orders");
                 }}
                 className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
               >

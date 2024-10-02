@@ -35,9 +35,15 @@ function CartPage() {
             <p>No Products In Cart</p>
           )}
         </div>
-        <Link to="/checkout" className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 inline-block font-medium hover:bg-black hover:text-white transition">
-          Proceed to Checkout
-        </Link>
+
+        {cart.length > 0 && (
+          <Link
+            to="/checkout"
+            className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 inline-block font-medium hover:bg-black hover:text-white transition"
+          >
+            Proceed to Checkout
+          </Link>
+        )}
       </section>
     </main>
   );
