@@ -66,7 +66,7 @@ function CheckoutPage() {
   };
 
   return (
-    <section className="py-8 px-16">
+    <section className="">
       <h1 className="text-4xl font-semibold">Checkout</h1>
       <div className="grid grid-cols-3 mt-4 gap-x-5">
         <div className="col-span-2 p-2 rounded-md ">
