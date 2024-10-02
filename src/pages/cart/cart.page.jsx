@@ -11,9 +11,9 @@ function CartPage() {
         <h1 className="text-4xl font-semibold py-5">Your Shopping Cart</h1>
         <div className="grid grid-cols-2 gap-x-8 gap-y-4">
           {cart.length > 0 ? (
-            cart.map((el) => {
+            cart.map((el, index) => {
               return (
-                <div className="border grid grid-cols-3 gap-2 p-2">
+                <div key={index} className="border grid grid-cols-3 gap-2 p-2">
                   <div className="col-span-1 bg-[#f4f8f9] rounded-lg">
                     <img
                       src={el.image}

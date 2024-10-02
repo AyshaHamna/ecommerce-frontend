@@ -19,6 +19,7 @@ export default function Navigation() {
           <Link to="/shop">Shop</Link>
         </div>
       </div>
+
       <div className="flex items-center gap-x-8">
         <div>
           <Link to="/cart" className="flex items-center gap-x-4 relative2">
@@ -32,6 +33,8 @@ export default function Navigation() {
             </div>
           </Link>
         </div>
+
+        <Link to='/profile/orders'>My Orders</Link>
 
         <SignedIn>
           <div className="flex items-center gap-x-4">
