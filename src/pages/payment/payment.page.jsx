@@ -31,40 +31,44 @@ function PaymentPage() {
     }
   }, [orderId]);
 
-  {
-    isError ? (
-      <p className="text-red-500">Error: {error}</p>
-    ) : isLoading ? (
-      <div>Loading...</div>
-    ) : (
-      <div>
-        <section className="py-8 px-16">
-          <h1 className="text-4xl font-semibold">Payment</h1>
-          <div className="grid grid-cols-4 gap-x-4 mt-4">
-            <button
-              type="button"
-              onClick={() => {
-                toast.success("Cash on delivery order confirmed");
-                navigate("/profile/orders"); //getOrdersByUser *challenge
-              }}
-              className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
-            >
-              Cash on Delivery
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                //payhere
-              }}
-              className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
-            >
-              Credit Card
-            </button>
-          </div>
-        </section>
-      </div>
-    );
-  }
+  return (
+    <>
+      {isError ? (
+        <p className="text-red-500">Error: {error}</p>
+      ) : isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <div>
+          <section className="py-8 px-16">
+            <h1 className="text-4xl font-semibold">Payment</h1>
+            <div className="grid grid-cols-4 gap-x-4 mt-4">
+              <button
+                type="button"
+                onClick={() => {
+                  toast.success("Cash on delivery order confirmed");
+                  navigate("/profile/orders");
+                }}
+                className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
+              >
+                Cash on Delivery
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  //payhere
+                  toast.success("Credit Card order confirmed");
+                  navigate("/profile/orders");
+                }}
+                className="border-2 border-black rounded-lg px-4 py-1 text-lg mt-4 font-medium hover:bg-black hover:text-white transition"
+              >
+                Credit Card
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default PaymentPage;
