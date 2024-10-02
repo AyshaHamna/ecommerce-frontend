@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="py-8 px-16">
+    <section className="">
       <h1 className="text-4xl font-semibold">Services To Help You Shop</h1>
       <div className="border mt-4"></div>
       <div className="py-8 grid grid-cols-3 gap-x-8">

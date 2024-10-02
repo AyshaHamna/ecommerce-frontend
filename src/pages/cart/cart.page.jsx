@@ -7,7 +7,7 @@ function CartPage() {
 
   return (
     <main>
-      <section className="py-8 px-16">
+      <section className="">
         <h1 className="text-4xl font-semibold py-5">Your Shopping Cart</h1>
         <div className="grid grid-cols-2 gap-x-8 gap-y-4">
           {cart.length > 0 ? (

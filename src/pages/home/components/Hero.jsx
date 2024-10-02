@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="py-8 px-16">
+    <section className="">
       <div className="grid grid-cols-2 rounded-md min-h-[60vh] bg-[#f4f8f9]">
         <div className="flex flex-col justify-center p-16 gap-y-4">
           <span className="block rounded-full px-2 py-1 text-xs w-fit bg-[#febc26]">

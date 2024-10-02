@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section className="bg-[#f4f9ff] py-16 px-32 grid grid-cols-3 gap-x-16">
+    <section className="bg-[#f4f9ff] py-16 px-32 grid grid-cols-3 gap-x-16 w-full">
       <div className="col-span-1">
         <a href="/" className="text-3xl font-semibold">
-          Melbius
+          DigiX
         </a>
         <p className="mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque

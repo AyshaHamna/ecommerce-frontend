@@ -39,7 +39,7 @@ function PaymentPage() {
         <div>Loading...</div>
       ) : (
         <div>
-          <section className="py-8 px-16">
+          <section className="">
             <h1 className="text-4xl font-semibold">Payment</h1>
             <div className="grid grid-cols-4 gap-x-4 mt-4">
               <button
