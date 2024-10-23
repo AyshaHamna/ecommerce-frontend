@@ -1,5 +1,7 @@
+import { API_URL } from "./config";
+
 export const getAllProducts = async () => {
-  const res = await fetch("http://localhost:8000/api/products", {
+  const res = await fetch(`${API_URL}/api/products`, {
     method: "GET",
   });
 
@@ -12,7 +14,7 @@ export const getProductsByCategory = async (
   sortOrder = ""
 ) => {
   const res = await fetch(
-    `http://localhost:8000/api/products?categoryId=${categoryId}&sortOrder=${sortOrder}`,
+    `${API_URL}/api/products?categoryId=${categoryId}&sortOrder=${sortOrder}`,
     {
       method: "GET",
     }
@@ -23,7 +25,7 @@ export const getProductsByCategory = async (
 };
 
 export const getProductById = async (productId) => {
-  const res = await fetch(`http://localhost:8000/api/products/${productId}`, {
+  const res = await fetch(`${API_URL}/api/products/${productId}`, {
     method: "GET",
   });
 
