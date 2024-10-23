@@ -1,4 +1,4 @@
-import { API_URL } from "./config";
+import { API_URL } from "../config";
 
 export const getAllProducts = async () => {
   const res = await fetch(`${API_URL}/api/products`, {

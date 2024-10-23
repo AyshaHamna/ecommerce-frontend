@@ -1,4 +1,4 @@
-import { API_URL } from "./config";
+import { API_URL } from "../config";
 
 export const createOrder = async (data) => {
   const token = await window.Clerk?.session?.getToken();
