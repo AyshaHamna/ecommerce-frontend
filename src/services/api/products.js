@@ -1,4 +1,10 @@
-import { API_URL } from "../config";
+// import { API_URL } from "../config";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+if (!API_URL) {
+  console.error("API URL is not set");
+}
 
 export const getAllProducts = async () => {
   const res = await fetch(`${API_URL}/api/products`, {
